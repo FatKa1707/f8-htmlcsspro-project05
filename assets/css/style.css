@@ -52,12 +52,31 @@ input, textarea, select, button {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
+}
+
+.eyebrow-heading {
+    display: flex;
+    align-items: center;
+    color: #696D77;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.eyebrow-heading::before {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 18px;
+    height: 2px;
+    background: #696D77;
 }
 
 /* ---------- Header ---------- */
 .header {
-    margin-top: 42px;
+    padding: 42px 0;
 }
+
 .header__inner {
     display: flex;
     align-items: center;
@@ -122,3 +141,164 @@ input, textarea, select, button {
     --height: 52px;
 }
 
+/* ---------- Hero ---------- */
+
+.hero {
+    padding: 34px 0;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+}
+.hero__content {
+    width: 46.2%;
+}
+
+.hero__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16666; /* 116.667% */
+}
+
+.hero__heading span {
+    color: #7264D6;
+}
+
+.hero_desc {
+    margin-top: 20px;
+    color: #696D76;
+    font-size: 1.8rem;
+    line-height: 1.6666; /* 166.667% */
+}
+
+.subscribe-form {
+    margin-top: 40px;
+    width: 100%;
+    height: 74px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 23px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-form__input::placeholder {
+    color: #696D76;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.subscribe-form__submit {
+    margin-right: 8px;
+    background: #7264D6;
+    width: 149px;
+    border-color: #7264D6;
+}
+
+.explication {
+    margin-top: 20px;
+    color: #696D76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71429; /* 171.429% */
+}
+
+.hero__media {
+    position: relative;
+}
+
+.hero__deposite-wrap {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #FFF;
+    width: 174px;
+    height: 46px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero__deposite {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.hero__deposite-content {
+    color: #31456A;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero__deposite-value {
+    color: #4AB5E3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.hero__interest {
+    position: absolute;
+    top: 127px;
+    right: -174px;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: #DA6464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__interest-value {
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero__funds-wrap {
+    position: absolute;
+    bottom: 61px;
+    right: -74px;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439F90;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.hero__funds-value {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero__funds-content {
+    margin-top: 5px;
+    color: #FFF;
+    font-size: 0.8rem;
+    line-height: 1 ; /* 100% */
+}

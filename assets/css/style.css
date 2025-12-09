@@ -80,6 +80,13 @@ input, textarea, select, button {
     line-height: 1.25; /* 125% */
 }
 
+.section-desc {
+    margin-top: 20px;
+    color: #696D76;
+    font-size: 1.8rem;
+    line-height: 1.6666; /* 166.667% */
+}
+
 /* ---------- Header ---------- */
 .header {
     padding: 42px 0;
@@ -396,7 +403,7 @@ input, textarea, select, button {
 }
 
 .work__content {
-    width: 470px;
+    width: 40.2%;
 }
 
 .work__heading {
@@ -416,4 +423,142 @@ input, textarea, select, button {
     color: #696D76;
     font-size: 1.6rem;
     line-height: 1.75; /* 175% */
+}
+
+/* ---------- Card ---------- */
+.card {
+    margin-top: 100px;
+    padding: 60px 0;
+}
+
+.card__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.card__content {
+    width: 40.2%;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66666; /* 166.667% */
+}
+
+.card__info::before {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #7264D6;
+    margin-right: 12px;
+}
+
+.card__info + .card__info {
+    margin-top: 18px;
+}
+
+.card__btn {
+    margin-top: 38px;
+    min-width: 149px;
+}
+
+.card__media {
+    position: relative;
+}
+
+.card__decor-top {
+    position: absolute;
+    top: -48px;
+    right: -88px;
+    background: #fff;
+    width: 276px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 13px;
+    border-radius: 12px;
+    box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.07);
+}
+
+.card-decor__left {
+    display: flex;
+    align-items: center;
+}
+
+.card-decor__left-img {
+    padding: 10px;
+    background: #fbefef;
+    border-radius: 8px;
+    margin-right: 14px;
+}
+
+
+.card-decor__left-title {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-decor__left-desc {
+    margin-top: 4px;
+    color: #696D76;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+}
+
+.card-decor__right {
+    text-align: right;
+}
+
+
+.card-decor__right-value {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+}
+
+.card-decor__right-date {
+    margin-top: 3px;
+    color: #696D76;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+}
+
+.card__decor-bottom {
+    position: absolute;
+    right: -88px;
+    bottom: -55px;
+    height: 120px;
+    width: 120px;
+    border-radius: 16px;
+    background: #439F90;
+    padding: 15px;
+}
+
+.card__decor-bottom-img {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 8px;
+}
+
+.card__decor-bottom-desc {
+    color: #FFF;
+    font-size: 1.2rem;
+    margin: 14px 0 6px;
+}
+
+.card__decor-bottom-value {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 1.8rem;
+    font-weight: 600;
 }

@@ -427,7 +427,7 @@ input, textarea, select, button {
 
 /* ---------- Card ---------- */
 .card {
-    margin-top: 100px;
+    margin-top: 66px;
     padding: 60px 0;
 }
 
@@ -437,11 +437,13 @@ input, textarea, select, button {
     column-gap: 130px;
 }
 
-.card__content {
+.card__content,
+.deposite__content {
     width: 40.2%;
 }
 
-.card__info {
+.card__info,
+.deposite__info {
     display: flex;
     align-items: center;
     margin-top: 28px;
@@ -451,7 +453,8 @@ input, textarea, select, button {
     line-height: 1.66666; /* 166.667% */
 }
 
-.card__info::before {
+.card__info::before,
+.deposite__info::before {
     content: "";
     display: inline-block;
     height: 12px;
@@ -465,7 +468,8 @@ input, textarea, select, button {
     margin-top: 18px;
 }
 
-.card__btn {
+.card__btn,
+.deposite__btn {
     margin-top: 38px;
     min-width: 149px;
 }
@@ -561,4 +565,73 @@ input, textarea, select, button {
     font-family: "Open Sans";
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* ---------- Deposite ---------- */
+.deposite {
+    margin-top: 40px;
+    padding: 60px 0;
+}
+
+.deposite__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deposite__media {
+    position: relative;
+}
+
+.deposite-method {
+    position: absolute;
+    bottom: 57px;
+    right: -74px;
+    background: #fff;
+    box-shadow: 0 44px 48px rgba(0, 0, 0, 0.10);
+    padding: 28px;
+    width: 281px;
+    border-radius: 10px;
+}
+
+.deposite-method__title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.666666; /* 166.667% */
+}
+
+.deposite-method__list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 18px;
+}
+
+.deposite-method__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #F2F2FA;
+}
+
+.deposite-method__item:last-child {
+    background: #F9EA63;
+}
+
+.deposite__decor {
+    position: absolute;
+    bottom: 222px;
+    right: -100px;
+    border-radius: 90px;
+    background: #7264D6;
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.10);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

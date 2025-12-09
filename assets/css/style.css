@@ -72,6 +72,14 @@ input, textarea, select, button {
     background: #696D77;
 }
 
+.section-heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+}
+
 /* ---------- Header ---------- */
 .header {
     padding: 42px 0;
@@ -301,4 +309,111 @@ input, textarea, select, button {
     color: #FFF;
     font-size: 0.8rem;
     line-height: 1 ; /* 100% */
+}
+
+/* ---------- Work ---------- */
+.work {
+    margin-top: 126px;
+    padding: 34px 0;
+}
+
+.work__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work__media {
+    position: relative;
+}
+
+.work__decor-top {
+    position: absolute;
+    top: 76px;
+    right: 62px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    background: #7264D6;
+    border-radius: 8px;
+}
+
+.work__decor-logo {
+    background: #F8FBFE;
+    padding: 8px;
+    border-radius: 4px;
+    height: 40px;
+    width: 40px;
+}
+
+.work__decor-bottom {
+    position: absolute;
+    right: -100px;
+    bottom: 96px;
+    width: 226px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background: #FFFDFA;
+    border-radius: 8px;
+    box-shadow: 0 14px 34px 0 rgba(0, 0, 0, 0.07);
+    padding: 15px;
+}
+
+.work__decor-check-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #4AB5E3;
+    height: 40px;
+    width: 40px;
+}
+
+.work__decor-check {
+    padding: 7px 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.work__decor-title {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.work__decor-desc {
+    margin-top: 5px;
+    color: #696D76;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+}
+
+.work__content {
+    width: 470px;
+}
+
+.work__heading {
+    margin-bottom: 70px;
+}
+
+.work__content-title {
+    margin-top: 30px;
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45455; /* 145.455% */
+}
+
+.work__content-desc {
+    margin-top: 16px;
+    color: #696D76;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
 }

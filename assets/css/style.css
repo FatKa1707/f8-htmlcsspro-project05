@@ -727,3 +727,25 @@ input, textarea, select, button {
     font-size: 1.8rem;
     line-height: 1.66666; /* 166.667% */
 }
+
+.testimonial__dots {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.testimonial__dot {
+    width: 22px;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid #9B9FAB;
+    cursor: pointer;
+}
+
+.testimonial__dot.active {
+    border-color: #7264D6;
+    background: #7264D6;
+    cursor: default;
+}
